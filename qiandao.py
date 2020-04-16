@@ -5,6 +5,7 @@ import requests
 import json
 import os
 
+
 username = os.environ.get( 'USERNAME' )
 password = os.environ.get( 'PASSWORD' )
 
@@ -38,3 +39,7 @@ response = requests.post(url, data=json.dumps(body), headers=headers)
 print(response.text)
 # 返回响应头
 print(response.status_code)
+
+print('while loop forever')
+while True:
+        pass
