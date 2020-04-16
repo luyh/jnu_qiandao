@@ -4,7 +4,7 @@
 import requests
 import json
 import os
-
+from send_email import  send_email
 
 username = os.environ.get( 'USERNAME' )
 password = os.environ.get( 'PASSWORD' )
@@ -40,6 +40,9 @@ print(response.text)
 # 返回响应头
 print(response.status_code)
 
+send_email(title='jnu 体温签到', content=response.text)
+
 print('while loop forever')
+
 while True:
         pass
