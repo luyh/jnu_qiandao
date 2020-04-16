@@ -1,1 +1,1 @@
-work: python hpg3/statemachine.py
+work: python qiandao.py
