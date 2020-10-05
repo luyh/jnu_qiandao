@@ -43,7 +43,7 @@ def login():
         # 返回响应头
         print(response.status_code)
 
-        send_email(title='jnu 体温签到', content=response.text)
+        #send_email(title='jnu 体温签到', content=response.text)
 
 def qiandao():
         url = 'https://stuhealth.jnu.edu.cn/api/write/main'
@@ -85,7 +85,7 @@ def qiandao():
         # 返回响应头
         print(response.status_code)
 
-        send_email(title='jnu 体温签到', content=response.text)
+        #send_email(title='jnu 体温签到', content=response.text)
 
 qiandao()
 
